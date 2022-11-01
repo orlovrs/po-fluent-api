@@ -1,0 +1,16 @@
+<html>
+    <body>
+    </body>
+    <script>
+        window.onload = function() {
+            // Firstly looking into manual parameter
+            // Then into chosen theme
+            // Then set default if both is none
+            const ab = new URLSearchParams(window.location.search).get('ab') || localStorage.getItem("ab") || 1;
+            if (ab == 2)
+                window.location.href = "./option2.html";
+            else
+                window.location.href = "./option1.html";
+        }
+    </script>
+</html>

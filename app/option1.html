@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <label for="option">Enter option name:</label>
+        <input type="text" id="option"><br><br>
+        <input type="submit" value="Submit" onclick="showOption(this)">
+    </body>
+    <script>
+        function showOption(element) {
+            alert(document.getElementById("option").value);
+        }
+    </script>
+</html>

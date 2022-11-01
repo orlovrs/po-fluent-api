@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <label for="option1">Option 1</label>
+        <input type="radio" id="option1" value="option 1" name="options">
+
+        <label for="option2">Option 2</label>
+        <input type="radio" id="option2" value="option 2" name="options">
+
+        <input type="submit" value="Submit" onclick="showOption()">
+        <div id="selected"></div>
+    </body>
+    <script>
+        function showOption() {
+            document.getElementById("selected").innerText = document.querySelector('input[name="options"]:checked').value;
+        }
+    </script>
+</html>
